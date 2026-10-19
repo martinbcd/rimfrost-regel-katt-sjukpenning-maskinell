@@ -1,0 +1,85 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/handlaggning/.*",
+    "headers": {
+      "Content-Type": {
+        "contains": "application/json"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.handlaggning.id"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "handlaggning": {
+        "id": "11111111-1111-1111-1111-111111111111",
+        "version": 2,
+        "yrkande": {
+          "id": "22222222-2222-2222-2222-222222222222",
+          "version": 1,
+          "erbjudandeId": "33333333-3333-3333-3333-333333333333",
+          "yrkandedatum": "2025-01-01T10:00:00Z",
+          "yrkandestatus": "YRKAT",
+          "yrkandeFrom": "2025-01-01T00:00:00Z",
+          "yrkandeTom": "2025-01-02T00:00:00Z",
+          "avsikt": "NY",
+          "individYrkandeRoller": [
+            {
+              "individ": {
+                "typId": "44444444-4444-4444-4444-444444444444",
+                "varde": "19990101-4444"
+              },
+              "yrkandeRollId": "55555555-5555-5555-5555-555555555555"
+            }
+          ],
+          "produceradeResultat": [
+            {
+              "id": "66666666-6666-6666-6666-666666666666",
+              "version": 2,
+              "from": "2025-01-01T00:00:00Z",
+              "tom": "2025-01-02T00:00:00Z",
+              "yrkandestatus": "YRKAT",
+              "avslagsanledning": null,
+              "typ": "ERSATTNING",
+              "data": "{}"
+            }
+          ]
+        },
+        "processinstansId": "77777777-7777-7777-7777-777777777777",
+        "skapadTS": "2025-01-01T09:00:00Z",
+        "avslutadTS": "2025-01-02T12:00:00Z",
+        "handlaggningspecifikationId": "88888888-8888-8888-8888-888888888888",
+        "underlag": [
+          {
+            "typ": "TEST_UNDERLAG",
+            "version": 1,
+            "data": "{}"
+          }
+        ],
+        "uppgift": {
+          "id": "99999999-9999-9999-9999-999999999999",
+          "version": 1,
+          "skapadTs": "2025-01-01T08:00:00Z",
+          "utfordTs": null,
+          "planeradTs": "2025-01-02T08:00:00Z",
+          "utforarId": null,
+          "aktivitetId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+          "uppgiftspecifikation": {
+            "id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "version": 1
+          },
+          "uppgiftStatus": "TILLDELAD",
+          "FSSAinformation": "HANDLAGGNING_PAGAR"
+        }
+      }
+    }
+  }
+}

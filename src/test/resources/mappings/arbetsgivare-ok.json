@@ -1,0 +1,36 @@
+{
+  "priority": 100,
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/arbetsgivare/.*"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8"
+    },
+    "transformers": ["response-template"],
+    "jsonBody": {
+      "anstallningar": [
+        {
+          "startdag": "2020-01-01",
+          "slutdag": "2021-06-30",
+          "arbetstid": 75,
+          "organisation": {
+            "nummer": "123456-7890",
+            "namn": "Exempel AB"
+          }
+        },
+        {
+          "startdag": "2021-07-01",
+          "slutdag": null,
+          "arbetstid": 100,
+          "organisation": {
+            "nummer": "987654-3210",
+            "namn": "Demo AB"
+          }
+        }
+      ]
+    }
+  }
+}

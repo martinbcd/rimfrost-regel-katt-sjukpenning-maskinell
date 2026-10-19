@@ -1,0 +1,33 @@
+uppgift:
+  version: 1
+  path: /regel/katt-sjukpenning-maskinell
+  aktivitet: "TestAktivitet"
+
+specifikation:
+  id: a42ffaed-2f20-47e8-8499-f2f79ae2f45f
+  version: 1
+  namn: "TestUppgiftNamn"
+  uppgiftbeskrivning: "TestUppgiftBeskrivning"
+  verksamhetslogik: C
+  roll: ANSVARIG_HANDLAGGARE
+  applikationsId: 3.5.3
+  applikationsversion: kontroll_katt_sjukpenning_1.0
+
+regel:
+  id: a11f3429-3a6b-4389-ba1c-c2747b0fb45b
+  version: 1
+  namn: "TestRegel"
+  beskrivning: "TestRegelBeskrivning"
+
+lagrum:
+  id: f0c927a9-b995-4a12-b4fd-4bcbf4281b44
+  version: 1
+  giltigFom: "2010-02-11"
+  forfattning: "TestFörfattning"
+  kapitel: 3
+  paragraf: 5
+  stycke: 1
+  punkt: 4
+
+utokadUppgiftsbeskrivning:
+  beskrivning: "TestUtokadUppgiftsbeskrivning"

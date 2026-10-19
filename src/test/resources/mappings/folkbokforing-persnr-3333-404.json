@@ -1,0 +1,13 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/folkbokforing/19990101-3333"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8"
+    }
+  }
+}

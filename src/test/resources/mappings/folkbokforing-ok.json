@@ -1,0 +1,26 @@
+{
+  "priority": 100,
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/folkbokforing/.*"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8"
+    },
+    "transformers": ["response-template"],
+    "jsonBody": {
+      "id": "{{ request.pathSegments.[1] }}",
+      "fornamn": "Lisa",
+      "efternamn": "Tass",
+      "kon": "K",
+      "adress": {
+        "careOf": "-",
+        "utdelningsadress": "Storgatan 75",
+        "postnummer": "12345",
+        "postort": "Orsa"
+      }
+    }
+  }
+}
